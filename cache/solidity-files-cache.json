@@ -37,8 +37,8 @@
       ]
     },
     "/Users/joshwaggoner/Documents/LEARNING/web3/jpegdegens/contracts/Counter.sol": {
-      "lastModificationDate": 1659754012900,
-      "contentHash": "f5290b7f23e8008fb7d1e33d6a705aa0",
+      "lastModificationDate": 1659990114738,
+      "contentHash": "9b6dc5f88654a388a2f9c1d0d7c42631",
       "sourceName": "contracts/Counter.sol",
       "solcConfig": {
         "version": "0.8.10",

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 import "hardhat/console.sol";
@@ -5,10 +6,19 @@ import "hardhat/console.sol";
 contract Counter {
     uint counter;
 
-    // state changing function
-    function count() public returns (uint) {
+    event CounterInc(uint counter);
+    //event CounterInc(uint address indexed addr, uint counter);
+
+    // state changing function / write state ($)
+    function count() public {
         counter++;
         console.log("Counter is now", counter);
-        return counter;
+        emit CounterInc(counter);
+        //emit CounterInc(msg.sender, counter);
+    }
+
+    // read state (free)
+    function getCounter() public view returns (uint32) {
+        return uint32(counter);
     }
 }
