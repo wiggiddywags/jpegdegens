@@ -37,8 +37,8 @@
       ]
     },
     "/Users/joshwaggoner/Documents/LEARNING/web3/jpegdegens/contracts/Counter.sol": {
-      "lastModificationDate": 1659990114738,
-      "contentHash": "9b6dc5f88654a388a2f9c1d0d7c42631",
+      "lastModificationDate": 1659991036134,
+      "contentHash": "d0cc4642c1cd0da2178199922e455d95",
       "sourceName": "contracts/Counter.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -106,6 +106,41 @@
       ],
       "artifacts": [
         "console"
+      ]
+    },
+    "/Users/joshwaggoner/Documents/LEARNING/web3/jpegdegens/contracts/TestGas.sol": {
+      "lastModificationDate": 1659992071582,
+      "contentHash": "1e0c2cb0c065996d5aeab2188540f3fc",
+      "sourceName": "contracts/TestGas.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TestGas"
       ]
     }
   }
