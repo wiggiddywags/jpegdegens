@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "hardhat/console.sol";
+
+interface IFallback {
+    function count() external;
+}
+
+contract Fallback {
+    function foo() internal view {
+        console.log("Hello World");
+    }
+
+    //don't specify it's a func
+    fallback() external payable {
+        foo();
+        console.log("fallback");
+
+        revert("You shouldn't be here");
+    }
+}
